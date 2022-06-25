@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/3ead36bd-73b7-42da-bd47-86e7a992b313/MX-es-20220509-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #b3b3b3;
+  background-blend-mode: multiply;
+}
+
+nav {
+  padding-left: 2rem;
+  background-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+main .login {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  min-width: 300px;
+  height: 100%;
+  padding: 60px 68px 40px;
+}
+main .login__title {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+main .login__group {
+  position: relative;
+  z-index: 10;
+  display: flex;
+}
+main .login__group__label {
+  position: absolute;
+  z-index: 150;
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  top: 30px;
+  left: 18px;
+  transition: all 300ms ease-in;
+  will-change: transform;
+}
+main .login__group__input {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  background: #333;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  opacity: 1;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 50px;
+  padding: 12px 18px 0;
+}
+main .login__group__input:focus + .login__group__label {
+  top: 15px;
+  font-size: 0.7rem;
+}
+main .login__sign-in {
+  margin: 24px 0 12px;
+  padding: 16px;
+  color: #fff;
+  background: #e50914;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .login__sign-in > a {
+  text-decoration: none;
+  color: #fff;
+}
+main .login__secondary-cta {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+main .login__secondary-cta__text {
+  opacity: 1;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  text-decoration: none;
+  will-change: transform;
+}
+main .login__secondary-cta__text--need-help {
+  transition: all 0.3s ease-in;
+}
+main .login__secondary-cta__text--need-help:hover {
+  text-decoration: underline;
+}
+
+::-moz-placeholder {
+  font-size: 0.7rem;
+}
+
+:-ms-input-placeholder {
+  font-size: 0.7rem;
+}
+
+::placeholder {
+  font-size: 0.7rem;
+}
+
+.call2act {
+  padding-top: 3rem;
+}
+.call2act p {
+  color: white;
+  font-size: 1.1rem;
+}
+.call2act a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.call2act a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4rem 0;
+  color: grey;
+  padding-left: 1rem;
+}
+footer a {
+  color: rgb(116, 116, 116);
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(116, 116, 116);
+  text-decoration: underline;
+}
+footer .other-links {
+  font-size: 1rem;
+}
+footer .other-links ul {
+  -moz-columns: 3;
+       columns: 3;
+  list-style: none;
+}
+footer .other-links li {
+  margin: 1.5rem 1rem;
+}
+footer .other-links a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 549px) {
+  footer .other-links {
+    font-size: 0.75rem;
+  }
+  footer .other-links ul {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+  footer .other-links {
+    font-size: 0.95rem;
+  }
+  footer .other-links ul {
+    -moz-columns: 3;
+         columns: 3;
+  }
+}/*# sourceMappingURL=singin.css.map */

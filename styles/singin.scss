@@ -1,0 +1,189 @@
+$white: #fff;
+$black: #000;
+$gray: #b3b3b3;
+$orange: orange;
+$red: #e50914;
+body{
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/3ead36bd-73b7-42da-bd47-86e7a992b313/MX-es-20220509-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: $gray;
+  background-blend-mode: multiply;
+}
+nav{
+  padding-left: 2rem;
+  background-color: transparent;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    background: rgba(000, 000, 000, 0.75);
+    border-radius: 4px;
+    min-width: 300px;
+    height: 100%;
+    padding: 60px 68px 40px;
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: $white;
+    }
+
+    &__group {
+      position: relative;
+      z-index: 10;
+      display: flex;
+
+      &__label {
+        position: absolute;
+        z-index: 150;
+        color: $gray;
+        font-size: 0.9rem;
+        top: 30px;
+        left: 18px;
+        transition: all 300ms ease-in;
+        will-change: transform;
+      }
+
+      &__input {
+        width: 100%;
+        position: relative;
+        z-index: 100;
+        background: #333;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: none;
+        opacity: 1;
+        font-size: 1rem;
+        color: $white;
+        line-height: 50px;
+        padding: 12px 18px 0;
+
+        &:focus+.login__group__label {
+          top: 15px;
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    &__sign-in {
+      margin: 24px 0 12px;
+      padding: 16px;
+      color: $white;
+      background: $red;
+      font-size: 0.9rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    &__sign-in>a{
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &__secondary-cta {
+      position: relative;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+
+      &__text {
+        opacity: 1;
+        font-size: 0.9rem;
+        color: $gray;
+        text-decoration: none;
+        will-change: transform;
+
+        &--need-help {
+          transition: all 0.3s ease-in;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+::placeholder {
+  font-size: 0.7rem;
+}
+
+.call2act{
+  padding-top: 3rem;
+  p{
+    color: white;
+    font-size: 1.1rem;
+  }
+  a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  a:hover{
+    color: blue;
+    text-decoration: underline;
+  }
+}
+footer{
+  background: rgba(000, 000, 000, 0.75);
+  padding: 4rem 0;
+  color: grey;
+  padding-left: 1rem;
+  a {
+      color: rgb(116, 116, 116);
+      text-decoration: none;
+    }
+  a:hover {
+      color: rgb(116, 116, 116);
+      text-decoration: underline;
+    }
+  .other-links {
+      
+      font-size: 1rem;
+        ul {
+            columns: 3;
+            list-style: none;
+          }
+        li{
+          margin: 1.5rem 1rem;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 549px){
+  footer{
+      .other-links {
+          font-size: 0.75rem;
+      
+          ul {
+            columns: 2;
+            
+          }
+        }
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+  footer {
+    .other-links {
+      font-size: 0.95rem;
+
+      ul {
+        columns: 3;
+      }
+    }
+  }
+}
